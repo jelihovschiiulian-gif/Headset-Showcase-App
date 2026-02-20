@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Iphone</title>
+</head>
+
+<body>
+
+    <div class="iphone-case">
+        <div class="iphone-frame">
+
+            
+
+            <div class="dynamic-island">
+
+            </div>
+            <p class="time">0:00</p>
+
+            <div class="status">
+                <img src="iphone-images/status.png" alt="">
+            </div>
+            <div class="down-bar">
+
+            </div>
+
+            <h1 class="title">EDIFIER<br>NEW HEADSET</h1>
+
+            <h2 class="sub-title">R1280DB</h2>
+
+
+            <div class="Rocket-button">
+                <p class="Rocket-text">ROCKET</p>
+            </div>
+
+            <div class="Catalog-button">
+                <p class="Catalog-text">CATALOG</p>
+                <img src="iphone-images/cat.png" alt="">
+
+            </div>
+
+            <div class="Menu-button">
+                <img src="iphone-images/menu.png" alt="">
+
+            </div>
+
+
+            <div class="Product-button" id="product-button">
+                <p class="Product-text">PRODUCT</p>
+            </div>
+
+            <div id="myProduct" class="myProduct">
+                <div class="background-image">
+                    <div class="headphones">
+                        <img src="iphone-images/head.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="Description-button" id="description-button">
+                <p class="Description-text">INFO</p>
+            </div>
+
+            <div  id="myDescription" class="myDescription">
+                <div class="background-description">
+                    <h1 class="Spec-text">Specifications</h1>
+
+                </div>
+            </div>
+
+
+
+
+            <div class="Cart-button" id="cart-button">
+                <p class="Cart-text">CART</p>
+            </div>
+
+            
+            
+
+        </div>
+    </div>
+
+</body>
+
+<script>
+
+    const productButton = document.getElementById('product-button');
+    const myProduct = document.getElementById('myProduct');
+
+    const descriptionButton = document.getElementById('description-button');
+    const myDescription = document.getElementById('myDescription');
+
+    myProduct.style.display = 'block';
+    myDescription.style.display = 'none';
+    productButton.addEventListener('click', () => {
+
+            myProduct.style.display = 'block' 
+            myDescription.style.display = 'none';
+         /*else {
+            myProduct.style.visibility = 'hidden';
+        }*/
+    });
+
+    descriptionButton.addEventListener('click', () => {
+            myProduct.style.display = 'none';
+            myDescription.style.display = 'block';
+    });
+
+    /*const productContent = document.getElementById('product-content');
+     const descriptionContent = document.getElementById('description-content');
+     const cartContent = document.getElementById('cart-content');
+ 
+     const productButton = document.getElementById('product-button');
+     const descriptionButton = document.getElementById('description-button');
+     const cartButton = document.getElementById('cart-button');
+ 
+     function hideAll() {
+         productContent.style.display = 'none';
+         descriptionContent.style.display = 'none';
+         cartContent.style.display = 'none';
+     }
+ 
+     productButton.addEventListener('click', () => {
+         hideAll();
+         productContent.style.display = 'block';
+     });
+ 
+     descriptionButton.addEventListener('click', () => {
+         hideAll();
+         descriptionContent.style.display = 'block';
+     });
+ 
+     cartButton.addEventListener('click', () => {
+         hideAll();
+         cartContent.style.display = 'block';
+     });*/
+</script>
+
+</html>
