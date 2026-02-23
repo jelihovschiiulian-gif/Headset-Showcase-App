@@ -149,11 +149,11 @@
     position: absolute;
     width: 85px;
     height: 44px;
-    background-color: rgb(23, 59, 89);
+    background-color: rgb(240, 240, 240);
     border-radius: 10px;
     top: 225px;
     left: 10px;
-    color: rgb(255, 255, 255);
+    color: rgb(23, 59, 89);
 
     display: flex;
     justify-content: center;
@@ -161,6 +161,15 @@
     font-size: 11px;
     font-family: 'Inter', sans-serif;
     letter-spacing: 1.3px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.Product-button:hover {
+    background-color: rgb(23, 59, 89);
+    color: rgb(240, 240, 240);
+    transform: scale(1.1);
 }
 
 .Product-text {
@@ -189,19 +198,60 @@
     font-family: 'Inter', sans-serif;
     letter-spacing: 1.3px;
     font-weight: bold;
-
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
+
+.Description-button:hover {
+    background-color: rgb(23, 59, 89);
+    color: rgb(240, 240, 240);
+    transform: scale(1.1);
+}
+
+
 
 .Description-text {
     position: static;
 }
-.myDescription h1 {
+
+.myDescription h4 {
    padding-left: 10px;
-   padding-top: 5px;;
+   padding-top: 0px;
    font-family: 'Inter', sans-serif;
    font-size: 24px;
+   color:  rgb(0, 0, 0);
+   letter-spacing: 1px;
    
 }
+
+.myDescription h1 {
+   padding-left: 10px;
+   padding-top: 13px;
+   font-family: 'Inter', sans-serif;
+   font-size: 22px;
+   color:  rgb(113, 113, 113);
+   letter-spacing: 1px;
+   
+}
+.myDescription .protocol{
+    padding-left: 10px;
+    padding-top: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: rgb(113, 113, 113);
+}  
+
+
+.myDescription .USB{
+    padding-left: 10px;
+    padding-top: 7px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;   
+}  
 
 
 .background-description {
@@ -214,6 +264,129 @@
 
 
 }
+
+.background-cart{
+    position: absolute;
+    background-color: rgb(250, 250, 250);
+    width: 286px;
+    height: 354px;
+    bottom: 0;
+    border-radius: 0 0 43px 43px;
+}
+
+.Checkout-button {
+    position: absolute;
+    width: 150px;
+    height: 44px;
+    background-color: rgb(22, 55, 81);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    border-radius: 15px;
+
+}
+
+.Checkout-text{
+    position: absolute;
+    color: rgb(240, 240, 240);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1.3px;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.myCart h1{
+    padding-left: 10px;
+   padding-top: 16px;
+   font-family: 'Inter', sans-serif;
+   font-size: 24px;
+   color:rgb(0, 0, 0);
+   letter-spacing: 1px;
+}
+
+.myCart .items {
+    padding-left: 10px;
+    padding-top: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: rgb(113, 113, 113);
+    letter-spacing: 1px;
+}
+.myCart .Delivery {
+    padding-left: 10px;
+    padding-top: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: rgb(113, 113, 113);
+    letter-spacing: 1px;
+}
+
+.item-span {
+    margin-left: 130px;
+    font-weight: 600;
+}
+.Delivery-span {
+    margin-left: 152px;
+    font-weight: bold;
+}   
+
+.underline {
+    padding-left: 10px;
+    padding-top: 5px;
+    color: rgb(113, 113, 113);
+}
+
+.Total {
+    padding-left: 10px;
+    padding-top: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.Total-span {
+    margin-left: 158px;
+    font-weight: bold;
+
+}
+
+.Taxes {
+    padding-left: 10px;
+    padding-top: 5px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: rgb(113, 113, 113);
+    letter-spacing: 1px;
+}
+
+
+
+.myDescription h2 {
+   padding-left: 10px;
+   padding-top: 18px;
+   font-family: 'Inter', sans-serif;
+   font-size: 22px;
+   color:  rgb(113, 113, 113);
+   letter-spacing: 1px;
+   
+}
+
+.myDescription h3 {
+   padding-left: 10px;
+   padding-top: 18px;
+   font-family: 'Inter', sans-serif;
+   font-size: 22px;
+   color:  rgb(113, 113, 113);
+   letter-spacing: 1px;
+   
+} 
+
+
 
 
 
@@ -235,7 +408,21 @@
     letter-spacing: 1.3px;
     font-weight: bold;
 
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
+
+.Cart-button:hover {
+    background-color: rgb(23, 59, 89);
+    color: rgb(240, 240, 240);
+    transform: scale(1.1);
+}
+
+.Cart-button:active {
+    background-color: rgb(23, 59, 89);
+    color: rgb(240, 240, 240);
+}
+
 
 .Cart-text {
     position: static;
