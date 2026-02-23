@@ -68,7 +68,28 @@
 
             <div  id="myDescription" class="myDescription">
                 <div class="background-description">
-                    <h1 class="Spec-text">Specifications</h1>
+
+                    <h4 class="Spec-text">Specifications</h4>
+
+
+                    <h1 class="Spec-text">Bluetooth®</h1>
+                    <p class="protocol">Bluetooth Protocol:</p>
+                    <p class="USB">A2DP, AVRCP, HFP</p>
+
+
+                    <h2 class="Spec-text">Battery</h2>
+                    <p class="protocol">Charging Port:</p>
+                    <p class="USB">USB-C (Type-C)</p>
+
+
+                    <h3 class="Spec-text">General Features:</h3>
+                    <p class="protocol">Frequency Response:</p>
+                    <p class="USB">20Hz - 20KHz</p>
+
+                    
+
+
+
 
                 </div>
             </div>
@@ -80,8 +101,24 @@
                 <p class="Cart-text">CART</p>
             </div>
 
-            
-            
+            <div id="myCart" class="myCart">
+                    <div class="background-cart">
+                        <h1 class="Cart-title">Order Summary</h1>
+                        <p class="items">1 item(s) <span class="item-span">$49.99</span></p>
+                        <p class="Delivery">Delivery <span class="Delivery-span">Free</span></p>
+
+                        <p class="underline">_________________________________</p>
+
+                        <p class="Total">Total <span class="Total-span">$49.99</span></p>
+                        <p class="Taxes">(Taxes included)</p>
+
+                    </div>
+                     <div class="Checkout-button">
+                            <p class="Checkout-text">CHECKOUT</p>
+                        </div>
+
+                
+            </div>
 
         </div>
     </div>
@@ -96,20 +133,30 @@
     const descriptionButton = document.getElementById('description-button');
     const myDescription = document.getElementById('myDescription');
 
+    const cartButton = document.getElementById('cart-button');
+    const myCart = document.getElementById('myCart');
+
     myProduct.style.display = 'block';
-    myDescription.style.display = 'none';
+    myDescription.style.display = 'none'
+    myCart.style.display = 'none';
     productButton.addEventListener('click', () => {
 
             myProduct.style.display = 'block' 
             myDescription.style.display = 'none';
-         /*else {
-            myProduct.style.visibility = 'hidden';
-        }*/
+            myCart.style.display = 'none';
+        
     });
 
     descriptionButton.addEventListener('click', () => {
             myProduct.style.display = 'none';
             myDescription.style.display = 'block';
+            myCart.style.display = 'none';
+    });
+
+    cartButton.addEventListener('click', () => {
+            myProduct.style.display = 'none';
+            myDescription.style.display = 'none';
+            myCart.style.display = 'block';
     });
 
     
